@@ -11,23 +11,42 @@
         <div class="demo-box">
             <div class="circle"></div>
             <div class="square"></div>
+            <!-- Particles will be added via JavaScript -->
         </div>
         <div class="explanation">
-            <h2>How @tweakable Works</h2>
-            <p>The <code>@tweakable</code> annotation is a special comment that marks values that can be adjusted by users without needing to modify code directly.</p>
-            <p>For example, in this demo, the circle and square properties are tweakable:</p>
+            <h2>The Power of @tweakable</h2>
+            <p>The <code>@tweakable</code> annotation is a special comment that marks values that can be adjusted by users without needing to modify code directly. This creates a powerful and immediate feedback loop between design and implementation.</p>
+            
+            <div class="controls-description">
+                <h3>In this enhanced demo, you can tweak:</h3>
+                <ul class="benefits-list">
+                    <li><strong>Basic properties:</strong> Size, color, and animation duration for shapes</li>
+                    <li><strong>Border styles:</strong> Thickness, color, and style (solid, dashed, dotted)</li>
+                    <li><strong>Shadow effects:</strong> Blur amount and color</li>
+                    <li><strong>Particle system:</strong> Count, size range, and animation speed</li>
+                    <li><strong>Animation effects:</strong> Pulse intensity and timing</li>
+                </ul>
+            </div>
+            
+            <h3>Example of Tweakable Values:</h3>
             <pre><code>/* @tweakable the size of the circle */
 const circleRadius = 50;
 
-/* @tweakable the color of the circle */
-const circleColor = "#ff5252";
+/* @tweakable border thickness for shapes in pixels */
+const borderWidth = 3;
 
-/* @tweakable the size of the square */
-const squareSize = 80;
+/* @tweakable shadow blur amount in pixels */
+const shadowBlur = 10;
 
-/* @tweakable the color of the square */
-const squareColor = "#4285f4";</code></pre>
-            <p>When you run this in a supported environment, these values would get UI controls automatically generated, allowing easy adjustments without editing code.</p>
+/* @tweakable number of particles in background */
+const particleCount = 15;
+
+/* @tweakable pulse effect intensity (0-1) */
+const pulseIntensity = 0.2;</code></pre>
+            
+            <p>When you run this in a supported environment, these values would get UI controls automatically generated, allowing for experimentation and fine-tuning without editing code.</p>
+            
+            <p>This example demonstrates how @tweakable can transform simple static elements into a dynamic, interactive design system that bridges the gap between code and design.</p>
         </div>
     </div>
     <script type="module" src="config.js"></script>
